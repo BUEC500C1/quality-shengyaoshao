@@ -21,7 +21,5 @@ def convert(int1):
         else:
             i = i + 1
     return res
-
-if __name__ == '__main__':
-    assert convert(1) == "I"
+def test():
     assert convert(12) == "XII"
