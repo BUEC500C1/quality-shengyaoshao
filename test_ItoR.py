@@ -8,8 +8,9 @@ while (type(int1) != int):
         print("input is not integer, please enter an integer")
         int1 = input()
 """
-def convert(int):
+def convert(int1):
     res = ''
+    int1 = int(int1)
     romancollection = ["M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"]
     numbercollection = [1000,900,500,400,100,90,50,40,10,9,5,4,1]
     i = 0
@@ -19,7 +20,8 @@ def convert(int):
             int1 = int1 - numbercollection[i]
         else:
             i = i + 1
-        return res
+    return res
 
-if __name == '__main__':
-    print(convert(342))
+if __name__ == '__main__':
+    print(convert(3202))
+
