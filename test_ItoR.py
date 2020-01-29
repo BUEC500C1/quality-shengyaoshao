@@ -19,7 +19,7 @@ def convert(int):
             int1 = int1 - numbercollection[i]
         else:
             i = i + 1
-    return res
+        return res
 
 if __name == '__main__':
     print(convert(342))
