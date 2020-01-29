@@ -23,5 +23,5 @@ def convert(int1):
     return res
 
 if __name__ == '__main__':
-    print(convert(3202))
+    assert convert(1) = "I"
 
