@@ -9,8 +9,11 @@ while (type(int1) != int):
         int1 = input()
 """
 def convert(int1):
+    if type(int1) != int:
+        return 'The input must be an integer'
+    if int1 > 3999 or int1 < 1:
+        return 'Number must be an integer between 1 and 3999'
     res = ''
-    int1 = int(int1)
     romancollection = ["M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"]
     numbercollection = [1000,900,500,400,100,90,50,40,10,9,5,4,1]
     i = 0
@@ -21,5 +24,3 @@ def convert(int1):
         else:
             i = i + 1
     return res
-def test():
-    assert convert(12) == "XII"
